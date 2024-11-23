@@ -104,6 +104,10 @@ main {
     text-align: center;
 }
 
+figcaption{
+    padding: 2px; color: rgb(61, 61, 61); font-size: small;
+}
+
 ul {
     list-style: none;
     padding: 0;

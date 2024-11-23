@@ -77,6 +77,11 @@ nav ul li a:hover {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+.heading{
+    text-align: center;
+    color: #4caf50
+}
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
