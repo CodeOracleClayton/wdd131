@@ -103,17 +103,6 @@ section {
     border-radius: 6px;
 }
 
-.introduction {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.introduction img {
-    width: 200px;
-}
-
 .center-text {
     text-align: center;
 }
