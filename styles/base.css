@@ -29,7 +29,6 @@ header,
 .card h2 {
     background-color: #2e7d32; /* fallback */
     background: linear-gradient(90deg, #2e7d32, #388e3c);
-    color: white;
 }
 
 header span {
