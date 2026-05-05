@@ -15,10 +15,6 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header * {
-    color: white;
-}
-
 header h2 {
     margin: 0;
     font-size: 1.8rem;
@@ -29,6 +25,7 @@ header,
 .card h2 {
     background-color: #2e7d32; /* fallback */
     background: linear-gradient(90deg, #2e7d32, #388e3c);
+    color: white;
 }
 
 header span {
@@ -108,7 +105,7 @@ section {
 }
 
 .card h2 {
-    background: linear-gradient(90deg, #4caf50, #81c784);
+    background-color: var(--green-dark);
     color: white;
     padding: 10px 15px;
     border-radius: 6px;
