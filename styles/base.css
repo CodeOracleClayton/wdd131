@@ -15,6 +15,12 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+header h1,
+header h2,
+header nav a {
+    color: white;
+}
+
 header h2 {
     margin: 0;
     font-size: 1.8rem;
@@ -23,8 +29,8 @@ header h2 {
 
 header,
 .card h2 {
-    background-color: #2e7d32; /* fallback */
-    background: linear-gradient(90deg, #2e7d32, #388e3c);
+    background-color: var(--green-dark);
+    background: linear-gradient(90deg, var(--green-dark), var(--green-mid));
     color: white;
 }
 
