@@ -144,7 +144,7 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: var(--green-dark);
+    color: #2e7d32;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -154,7 +154,7 @@ ul li a:hover {
 }
 
 footer {
-    background-color: var(--green-dark);
+    background-color: #2e7d32;
     color: white;
     text-align: center;
     padding: 15px 10px;
