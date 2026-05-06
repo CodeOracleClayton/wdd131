@@ -1,0 +1,12 @@
+/* Default (mobile-first) */
+main {
+  display: block;
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    gap: 1rem;
+  }
+}
