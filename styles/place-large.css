@@ -1,0 +1,56 @@
+@media screen and (min-width: 800px) {
+
+    header,
+    main,
+    footer {
+        max-width: 1980px;
+        font-size: larger;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .background {
+        position: relative;
+    }
+
+
+    .hero {
+        width: fit-content;
+        position: relative;
+    }
+
+    section {
+        position: absolute;
+        width: fit-content
+    }
+
+    .dataContainer {
+        left: 20px;
+        top: 120px;
+    }
+
+    .weatherContainer {
+        right: 20px;
+        bottom: 90px;
+    }
+
+    .weather {
+        display: none;
+    }
+
+    .weather-title::after {
+        content: "⛅";
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        font-size: larger;
+    }
+}
