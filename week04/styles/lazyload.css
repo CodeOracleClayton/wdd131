@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 900px;
+    display: block;
+    font-size: 1.5rem;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 25s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

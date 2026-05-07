@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals page by Clayton Zulu, showcasing personal introduction and web development resources.">
+    <title>WDD 131 - Dynamic Web Fundamentals - Clayton Zulu</title>
+    <meta name="author" content="Clayton Zulu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h2>Temple Album</h2>
+            </div>
+            <button class="menu-toggle" id="hamburger" aria-label="Toggle navigation">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <ul id="navMenu">
+                <li><a href="#" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="heading">
+            <h1 id="galleryHeading">Home</h1>
+        </div>
+        <div class="gallery" id="templeGallery"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | WDD 131 - Clayton Zulu | Benoni, Johannesburg, South Africa</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
