@@ -1,165 +1,195 @@
 :root {
-  --primary-color: #2e7d32;;
-  --secondary-color: #1c1b5e;
-  --light-bg: #f9f9f9;
-  --text-dark: #222;
-  --text-light: #fff;
-  --max-width: 1200px;
-  --spacing: 1rem;
+    --light-text: #ffffff;
+    --primary-red: #b10f2e;
+    --primary-blue: #0e1e40;
+    --accent-yellow: #f4b400;
+    --background-color: #f4f8fb;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --border-radius: 8px;
 }
 
+/* RESET */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* BODY */
 body {
-  font-family: "Poppins", "Roboto", sans-serif;
-  line-height: 1.6;
-  color: var(--text-dark);
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    color: #111;
+    line-height: 1.6;
 }
 
+/* LAYOUT */
 header,
+main,
 footer {
-  background: var(--primary-color);
-  color: var(--text-light);
-  text-align: center;
-  padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-header h1 {
-  font-size: 2rem;
+/* HEADER */
+.site-header {
+    background-color: var(--primary-red);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
 }
 
-.footer-content {
-  margin-bottom: 10px;
-  font-size: 16px;
+.site-header h1 {
+    font-family: "Merriweather", serif;
+    font-size: 2.5rem;
 }
 
-.last-modified {
-  font-size: 14px;
-  color: #ffd700;
-}
-
-main {
-  display: grid;
-  gap: var(--spacing);
-  padding: var(--spacing);
-}
-
-@media (min-width: 769px) {
-  main {
-    height: 100vh;
-    overflow: hidden;
+/* HERO SECTION */
+.hero {
     position: relative;
-    background: url("../images/place/victoria-falls.webp") center/cover no-repeat;
-    background-size: cover;
-  }
-
-  .hero-img {
-    display: none;
-  }
-
-  .data,
-  .weather {
-    position: absolute;
-    z-index: 2;
-    max-width: 300px;
-  }
-
-  .data {
-    top: 2rem;
-    left: 2rem;
-  }
-
-  .weather {
-    bottom: 2rem;
-    right: 2rem;
-  }
 }
 
-@media (max-width: 768px) {
-  main {
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: none;
-  }
-
-  .hero-img {
-    display: block;
+.hero-img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-  }
-
-  .data,
-  .weather {
-    position: relative;
-    margin: 1rem 0;
-    max-width: 90%;
-    left: auto;
-    top: auto;
-    right: auto;
-    bottom: auto;
-  }
+    display: block;
 }
 
-.data,
-.weather {
-  background: rgba(255, 255, 255, 0.9);
-  padding: var(--spacing);
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+/* CARD STYLING */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    width: 320px;
 }
 
-.data h2,
-.weather h2 {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--secondary-color);
-  color: var(--text-light);
-  padding: 0.5rem;
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
+/* CARD HEADERS */
+.card h2,
+.weather-heading {
+    background-color: #198754;
+    color: white;
+
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 0.8rem 1rem;
+
+    font-family: "Merriweather", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.weather ul,
-.data ul {
-  list-style: none;
+/* DATA CARD HEADER */
+.card h2 {
+    text-align: left;
 }
 
-.weather .temp {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+/* WEATHER HEADER */
+.weather-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
-.weather .temp svg {
-  width: 24px;
-  height: 24px;
+/* REMOVE DEFAULT H2 SPACING */
+.weather-heading h2 {
+    margin: 0;
+    font-size: inherit;
+    color: white;
 }
 
-.weather h2 svg {
-  display: none;
+/* WEATHER ICON */
+.weather-icon {
+    width: 28px;
+    height: 28px;
 }
 
-@media (max-width: 768px) {
-  .weather h2 svg {
+/* DATA CARD */
+.data-card {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+/* WEATHER CARD */
+.weather-card {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+/* INFO GRID */
+.info-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+}
+
+.info-grid p {
+    margin: 0;
+}
+
+.info-grid strong {
     display: inline-block;
-  }
 }
 
-.footer-content::after {
-  content: "👨‍💻";
-  margin-left: 0.25rem;
+/* FOOTER */
+footer {
+    background-color: var(--primary-blue);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 768px) {
+
+    .site-header h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+
+    .card {
+        width: 85%;
+        padding: 0.8rem;
+        border-radius: 6px;
+    }
+
+    /* DATA CARD */
+    .data-card {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.85);
+    }
+
+    /* WEATHER CARD */
+    .weather-card {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.85);
+    }
+
+    .card h2 {
+        font-size: 1.3rem;
+    }
+
+    .info-grid {
+        font-size: 0.9rem;
+    }
 }
