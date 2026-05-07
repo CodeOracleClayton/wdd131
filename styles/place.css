@@ -8,12 +8,14 @@
     --border-radius: 8px;
 }
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
@@ -21,6 +23,7 @@ body {
     line-height: 1.6;
 }
 
+/* LAYOUT */
 header,
 main,
 footer {
@@ -28,6 +31,7 @@ footer {
     margin: 0 auto;
 }
 
+/* HEADER */
 .site-header {
     background-color: var(--primary-red);
     color: var(--light-text);
@@ -41,6 +45,7 @@ footer {
     font-size: 2.5rem;
 }
 
+/* HERO SECTION */
 .hero {
     position: relative;
 }
@@ -51,6 +56,7 @@ footer {
     display: block;
 }
 
+/* CARD STYLING */
 .card {
     background: rgba(255, 255, 255, 0.85);
     padding: 1rem;
@@ -59,6 +65,7 @@ footer {
     width: 320px;
 }
 
+/* CARD HEADERS */
 .card h2,
 .weather-heading {
     background-color: #198754;
@@ -72,10 +79,12 @@ footer {
     font-weight: bold;
 }
 
+/* DATA CARD HEADER */
 .card h2 {
     text-align: left;
 }
 
+/* WEATHER HEADER */
 .weather-heading {
     display: flex;
     align-items: center;
@@ -83,29 +92,34 @@ footer {
     gap: 0.5rem;
 }
 
+/* REMOVE DEFAULT H2 SPACING */
 .weather-heading h2 {
     margin: 0;
     font-size: inherit;
     color: white;
 }
 
+/* WEATHER ICON */
 .weather-icon {
     width: 28px;
     height: 28px;
 }
 
+/* DATA CARD */
 .data-card {
     position: absolute;
     top: 2rem;
     left: 2rem;
 }
 
+/* WEATHER CARD */
 .weather-card {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
 }
 
+/* INFO GRID */
 .info-grid {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -120,6 +134,7 @@ footer {
     display: inline-block;
 }
 
+/* FOOTER */
 footer {
     background-color: var(--primary-blue);
     color: var(--light-text);
@@ -129,6 +144,7 @@ footer {
     font-size: 0.95rem;
 }
 
+/* MOBILE RESPONSIVE */
 @media screen and (max-width: 768px) {
 
     .site-header h1 {
@@ -151,6 +167,7 @@ footer {
         border-radius: 6px;
     }
 
+    /* DATA CARD */
     .data-card {
         position: absolute;
         top: 1rem;
@@ -159,6 +176,7 @@ footer {
         background: rgba(255, 255, 255, 0.85);
     }
 
+    /* WEATHER CARD */
     .weather-card {
         position: absolute;
         bottom: 1rem;
